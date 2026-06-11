@@ -9,13 +9,13 @@
     <style>
         /* Additional styles for banner-like headers */
         .banner-header {
-            background-color: #333; /* Change to your preferred color */
+            background-color: #333; 
             color: #fff;
             padding: 1em;
             text-align: center;
             font-size: 2em;
             margin-bottom: 1em;
-            border-radius: 8px; /* Rounded corners */
+            border-radius: 8px; 
             width: 100%;
         }
         
@@ -36,7 +36,7 @@
             width: 100%;
             max-height: 300px;
             overflow: hidden;
-            border-radius: 8px; /* Rounded corners for images */
+            border-radius: 8px; 
         }
 
         .posts .image.fit img {
@@ -51,17 +51,43 @@
         .actions.special .button {
             margin: 1em 0;
         }
+
+        /* Skills specific grid enhancements */
+        .skills-grid p {
+            margin-bottom: 1.5em;
+            line-height: 1.6;
+        }
+
+        /* Video embed responsive wrapper */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body class="is-preload">
 
-    <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
 
-        <!-- Intro -->
         <div id="intro">
             <h1>Mahmoud Ghanem<br />Portfolio</h1>
-            <p>Data Analyst with 2+ years of experience using SQL, Python, R, Excel/Google Sheets, BI Tools (Looker/Tableau), dbt & BigQuery.</p>
+            <p>Senior Data Analyst & Data Engineer specializing in scalable ETL/ELT pipelines, enterprise cloud architecture, and strategic Business Intelligence. Recipient of the UC Berkeley MIDS Hal R. Varian Capstone Award.</p>
             <section>
                 <ul class="icons alt">
                     <li><a href="https://www.linkedin.com/in/mahmoudmghanem" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -74,7 +100,6 @@
             </ul>
         </div>
 
-        <!-- Nav -->
         <nav id="nav">
             <ul class="links">
                 <li><a href="#projects">Projects</a></li>
@@ -90,10 +115,8 @@
             </ul>
         </nav>
 
-        <!-- Main -->
         <div id="main">
 
-            <!-- Project Categories Section -->
             <section id="projects">
                 <header class="banner-header">
                     Projects
@@ -104,7 +127,6 @@
                 </ul>
             </section>
 
-            <!-- Data Analysis Section -->
             <section class="posts" id="data-analysis" style="display: none;">
                 <header class="banner-header">Data Analysis</header>
                 <article>
@@ -181,9 +203,25 @@
                 </article>
             </section>
 
-            <!-- Data Science Section -->
             <section class="posts" id="data-science" style="display: none;">
                 <header class="banner-header">Data Science</header>
+                
+                <article>
+                    <header>
+                        <h2><a href="https://www.ischool.berkeley.edu/projects/2024/quillquery-revolutionizing-email-search-smarter-summaries">QuillQuery: AI-Powered Email Search & Summarization Platform</a></h2>
+                    </header>
+                    <a href="https://www.ischool.berkeley.edu/projects/2024/quillquery-revolutionizing-email-search-smarter-summaries" class="image fit"><img src="images/quillquery.jpg" alt="QuillQuery Project Logo Header"></a>
+                    <p>Co-developed an award-winning Capstone platform that leverages advanced Natural Language Processing (NLP) and Generative AI to revolutionize email management and search efficiency. Built using robust machine learning pipelines, the system processes unstructured text to deliver high-fidelity summaries and precise semantic search capabilities. Engineered to solve information overload, the project was honored with the prestigious Fall 2024 Hal R. Varian MIDS Capstone Award for its technical innovation and scalable execution.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7330656354170232832" allowfullscreen="" title="QuillQuery Video Demo" width="504" height="284" frameborder="0"></iframe>
+                    </div>
+                    <ul class="actions special">
+                        <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTQeXLXbVx5NFj_z3OaGUfXcTJHCmchV8WPGvYcKJzlQeH_ZGPYEKBRZlcJDbadoeRYvkebkFnHN5FP/pub?start=true&loop=false&delayms=3000&slide=id.g3101b7277b6_0_194" class="button">Presentation</a></li>
+                        <li><a href="https://www.ischool.berkeley.edu/projects/2024/quillquery-revolutionizing-email-search-smarter-summaries" class="button">Project Details</a></li>
+                        <li><a href="https://www.ischool.berkeley.edu/news/2025/data-science-masters-project-uses-artificial-intelligence-manage-emails-efficiently" class="button">Q&A</a></li>
+                    </ul>
+                </article>
+
                 <article>
                     <header>
                         <h2><a href="https://github.com/mmaghanem/NLP_Detecting_Sarcasm">NLP: Detecting Sarcasm using BERT</a></h2>
@@ -230,7 +268,6 @@
                 </article>
             </section>
 
-            <!-- Education Section -->
             <section id="education">
                 <header class="banner-header">
                     Education
@@ -238,7 +275,8 @@
                 <article>
                     <header>
                         <h3>Master of Science in Information and Data Science</h3>
-                        <p><strong>University:</strong> University of California, Berkeley | <strong>Expected Grad:</strong> Dec 2024</p>
+                        <p><strong>University:</strong> University of California, Berkeley | <strong>Graduated:</strong> Dec 2024</p>
+                        <p>★ <strong>Recipient of the Fall 2024 Hal R. Varian MIDS Capstone Award</strong></p>
                         <p><strong>Coursework:</strong>
                             Generative AI,
                             Natural Language Processing(NLP) with Deep Learning, 
@@ -253,51 +291,64 @@
                 <article>
                     <header>
                         <h3>Bachelor of Science in Accounting and Business Administration</h3>
-                        <p><strong>University:</strong> Al Azhar University, Egypt | <strong>June 2010</strong></p>
+                        <p><strong>University:</strong> Al Azhar University, Egypt | <strong>December 2010</strong></p>
                     </header>
                 </article>
             </section>
 
-            <!-- Skills -->
             <section id="skills">
                 <header class="banner-header">
                     Skills
                 </header>
-                <article>
+                <article class="skills-grid">
                     <header>
-                        <p><strong>Data:</strong> SQL, Python, Tensor Flow, PyTorch, NumPy, Pandas, R, Exploratory Data Analysis, dbt, BigQuery, Looker, Tableau, Power BI, Heap.</p>
-                        <p><strong>Other:</strong>  Financial Analysis, Testing, systems operations, project management, and information services.</p>
+                        <p><strong>Data Engineering & Cloud Architecture:</strong> Microsoft Fabric (Fabric Notebooks), dbt, LookML, Pipeline Architecture, Advanced Data Modeling (Star/Snowflake), Schema Mapping, Slowly Changing Dimensions (SCD Type 1/2), Data Change Capture (DCC), PySpark, Delta Lake, Hadoop, Git.</p>
+                        <p><strong>Data Analysis & Business Intelligence:</strong> SQL (Oracle, BigQuery, MySQL, PostgreSQL), Python (Pandas, NumPy, openpyxl), R, PowerShell, Looker, Power BI, Tableau, Heap, BI Semantic Modeling, Self-Service BI, Dashboard Performance Optimization.</p>
+                        <p><strong>Advanced Analytics & AI:</strong> Generative AI, Natural Language Processing (NLP), Deep Learning, TensorFlow, PyTorch, Feature Engineering, Linear Regression, Random Forests, Statistical Analysis, A/B Testing & Causal Inference.</p>
+                        <p><strong>Methodologies & Governance:</strong> SDLC Management, User Acceptance Testing (UAT), Agile & Waterfall Frameworks, Automated Schema Mapping, SQL Check Constraints, Data Traceability & Audit Frameworks, Cross-Functional Leadership, Project Risk Management.</p>
                     </header>
                 </article>
             </section>
 
-            <!-- Experience Section -->
             <section id="experience">
                 <header class="banner-header">
                     Experience
                 </header>
                 <article>
                     <header>
-                        <h3>Data Analyst</h3>
-                        <p><strong>Company:</strong> LaunchGood Inc. | <strong>Duration:</strong> Dec 2022 - Present</p>
+                        <h3>Senior Data Analyst — Pioneer @ LACOE</h3>
+                        <p><strong>Location:</strong> Downey, CA | <strong>Duration:</strong> May 2025 - Present</p>
                     </header>
                     <ul>
-                        <li>Conduct research on big datasets using SQL, Python, Excel/Google Sheets, BI Tools</li>
-                        <li>Design, develop, and maintain robust dashboards and reports using Looker, Heap, Google BigQuery, and Sheets, enabling teams to gain valuable insights and make data-driven decisions.</li>
-                        <li>Spearhead the migration of financial data from multiple internal and external databases/tables, resulting in the creation of comprehensive monthly financial reports for the finance team to identify profit leaks and optimize company performance.</li>
-                        <li>Utilize SQL, dbt, and lookML tools to extract, transform, and load data from our MySQL database into data pipelines, facilitating the creation of actionable dashboards and reports.</li>
-                        <li>Conduct in-depth data analysis, including campaign performance, conversion rates, user engagement, and financial reconciliations, delivering actionable insights to various VPs.</li>
+                        <li>Engineered robust data engineering pipelines in Microsoft Fabric to orchestrate complex HRS system extracts, utilizing Fabric notebooks and PySpark to ingest, clean, and stage large-scale datasets across an enterprise-wide modernization initiative replacing legacy, 30-year-old data processes and synchronizing Databricks snapshots, securing 100% downstream reporting accuracy.</li>
+                        <li>Orchestrated large-scale data conversion and validation workflows for 60+ datasets resolving complex data anomalies and file discrepancies to guarantee 100% data consistency during HCM cloud migration.</li>
+                        <li>Automated data extraction, transformation, and load (ETL) pipelines using complex SQL queries and Python-based comparison validation routines to support parallel payroll cycles, significantly reducing manual auditing cycles and reporting errors.</li>
+                        <li>Developed and executed rigorous data mapping strategies to transition data fields into target databases, ensuring absolute integrity and cross-system compliance, building reusable mapping frameworks and SQL check constraints that ensured absolute integrity, compliance, and governance across legacy to cloud system transitions.</li>
+                        <li>Partnered with cross-functional project managers, engineers, and key stakeholders within Agile and Waterfall frameworks to align technical data solutions with broader organizational modernization initiatives and go-live goals.</li>
                     </ul>
                 </article>
                 <article>
                     <header>
-                        <h3>Data Analyst</h3>
+                        <h3>Senior Data Analyst</h3>
+                        <p><strong>Company:</strong> LaunchGood Inc. | <strong>Duration:</strong> Dec 2022 - May 2025</p>
+                    </header>
+                    <ul>
+                        <li>Validated data accuracy and structural consistency across massive MySQL databases using advanced SQL and Python, ensuring 99.9% data integrity for critical financial and operational workflows.</li>
+                        <li>Engineered and maintained interactive BI dashboards and reports in Looker and Heap by centralizing multi-source metrics into Google BigQuery, reducing reporting cycles by 30%.</li>
+                        <li>Spearheaded the end-to-end ETL migration and integration of financial data from multiple internal and external databases, utilizing APIs and scheduled Python notebooks to identify profit leaks and optimize monthly performance profiles.</li>
+                        <li>Utilized SQL, dbt, and LookML tools to architect automated data transformation pipelines, providing automated, actionable insights across various corporate departments.</li>
+                        <li>Conducted deep-dive statistical analysis on user engagement, campaign performance, and conversion rates, delivering regression modeling directly to VPs to shape core product management strategies.</li>
+                    </ul>
+                </article>
+                <article>
+                    <header>
+                        <h3>Senior Data Analyst</h3>
                         <p><strong>Company:</strong> Accenture @ Google | <strong>Duration:</strong> Jun 2022 - Dec 2022</p>
                     </header>
                     <ul>
-                        <li>Conducted research on big datasets using SQL, Excel/Google Sheets, and internal Google Dashboards</li>
-                        <li>Worked with project managers to understand and interpret complex business requirements into SQL queries and define metrics, automate processes, and improve workflows through analysis, coding, and database management</li>
-                        <li>Conducted initial due diligence on technology and business operations, developed project documentation, integration plans, timelines, resource requirements, personnel structures, and go-live implementation and training schedules.</li>
+                        <li>Executed high-fidelity data extraction and anomaly detection routines via complex SQL queries across internal Google dashboards, eliminating data quality bottlenecks and maintaining high-fidelity reporting standards.</li>
+                        <li>Collaborated directly with project managers to architect technical specifications, translating ambiguous business requirements into automated SQL queries and workflows that eliminated 25+ hours of manual data tasks weekly.</li>
+                        <li>Managed technical documentation, integration plans, and resource timelines across the SDLC, mitigating implementation risks to ensure on-time delivery of major application updates and system features.</li>
                     </ul>
                 </article>
                 <article>
@@ -306,20 +357,20 @@
                         <p><strong>Company:</strong> Accenture @ Google | <strong>Duration:</strong> Jan 2020 - Dec 2022</p>
                     </header>
                     <ul>
-                        <li>Managed and tested Movies & TV Tools testing; including preparing XML test packages (MMC, MEC, Media files) for Partner Portal tool</li>
-                        <li>Prepared mass avail files & packages to test avail backend data and ingestion pipelines performance</li>
-                        <li>Used SQL to retrieve and summarize production data key points and tie back to user experience</li>
+                        <li>Directed User Acceptance Testing (UAT) for internal media tools, configuring specialized XML test packages and mass avail test files to validate backend ingestion pipelines and prevent production errors.</li>
+                        <li>Optimized ingestion pipeline performance by engineering mass avail test files to simulate high-volume loads, successfully uncovering architectural flaws early in the SDLC to prevent production errors.</li>
+                        <li>Leveraged SQL to extract, model, and summarize live production metrics, directly correlating backend system processing delays to user experience degradations for the software engineering team.</li>
                     </ul>
                 </article>
                 <article>
                     <header>
-                        <h3>Technical Support</h3>
+                        <h3>Technical Support Engineer</h3>
                         <p><strong>Company:</strong> Accenture @ Google | <strong>Duration:</strong> Mar 2019 - Dec 2019</p>
                     </header>
                     <ul>
-                        <li>Curated, analyzed, and integrated user/system requirements into design specifications</li>
-                        <li>Provided primary support for installation of application releases into production</li>
-                        <li>Conducted project and issue management (status reporting, issue reporting, ETC/budget reporting)</li>
+                        <li>Curated and integrated technical system requirements into design specifications, protecting data field consistency and system compatibility during major environment rollouts.</li>
+                        <li>Provided foundational technical support during live production deployments, executing real-time database validation scripts to guarantee zero post-migration downtime and complete data retention.</li>
+                        <li>Managed cross-functional technical issues, status tracking, and budget reporting, delivering transparent operational metrics to leadership to keep system releases aligned with financial guardrails.</li>
                     </ul>
                 </article>
                 <article>
@@ -328,8 +379,8 @@
                         <p><strong>Company:</strong> Accenture @ Google | <strong>Duration:</strong> Oct 2018 - Feb 2019</p>
                     </header>
                     <ul>
-                        <li>Investigated and resolved issues regarding content that is reported for account support and/or safety; flag for action, and resolve within agreed-upon turnaround times and standards of quality</li>
-                        <li>Understood and remain up-to-date with client policies and guidelines; resolved inquires according to defined policies and procedures</li>
+                        <li>Investigated and resolved issues regarding content that is reported for account support and/or safety; flag for action, and resolve within agreed-upon turnaround times and standards of quality.</li>
+                        <li>Understood and remained up-to-date with client policies and guidelines; resolved inquiries according to defined policies and procedures.</li>
                     </ul>
                 </article>
                 <article>
@@ -337,16 +388,19 @@
                         <h3>IT Project Coordinator</h3>
                         <p><strong>Company:</strong> United Group | <strong>Location:</strong> Cairo, Egypt | <strong>Duration:</strong> Apr 2014 - Apr 2017</p>
                     </header>
+                    <ul>
+                        <li>Orchestrated the implementation of comprehensive ERP software systems, supervising technical engineering teams and enforcing strict database backup protocols to ensure zero data loss.</li>
+                        <li>Facilitated data-driven project review meetings with cross-functional stakeholders, deploying clear risk mitigation strategies and recovery actions to eliminate development bottlenecks.</li>
+                    </ul>
                 </article>
 
             </section>
             
-            <!-- Contact -->
             <section id="contact">
                 <header class="banner-header">
                     Contact
                 </header>
-                <footer id="contact" style="
+                <footer style="
                         background-blend-mode: revert-layer;
                         background-color: gray; 
                         color: #fff;
@@ -355,7 +409,6 @@
                         font-size: 2em;
                         margin-bottom: 1em;
                         border-radius: 8px;
-                        /* width: 80.7%; */
                         margin: 0 auto;">
                     <section class="split contact">
                         <section>
@@ -380,17 +433,12 @@
 
         </div>
 
-
-
-        
-        <!-- Copyright -->
         <div id="copyright">
             <ul><li>&copy; Mahmoud Ghanem</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
         </div>
 
     </div>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
